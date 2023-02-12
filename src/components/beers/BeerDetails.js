@@ -2,14 +2,13 @@
 import classes from './BeerDetail.module.css';
 
 function BeerDetails(props) {
-  const { id, name, description, price, image } = props.beerData;
 
   return (
     <div className={classes.beer}>
-      <h1>{name}</h1>
-      <img src={image} alt={name} />
-      <p>{description}</p>
-      <span>{price.toFixed(2)}$ per bottle</span>
+      <h1>{props.name}</h1>
+      <img src={props.image} alt={props.name} />
+      <p>{props.description}</p>
+      <span>{props.price.toFixed(2)}$ per bottle</span>
     </div>
   );
 }

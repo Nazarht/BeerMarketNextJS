@@ -2,8 +2,16 @@ import BeerDetails from "@/components/beers/BeerDetails";
 import { MongoClient, ObjectId } from "mongodb";
 
 function BeerDetailsPage(props) {
+  const { beerData } = props;
   return (
-    <BeerDetails beerData={props.beerData}/>
+    <BeerDetails
+      name={beerData.name}
+      id={beerData.id}
+      image={beerData.image}
+      key={beerData.id}
+      description={beerData.description}
+      price={+beerData.price}
+    />
   );
 }
 
@@ -20,7 +28,7 @@ export async function getStaticPaths() {
   client.close();
 
   return {
-    fallback: true,
+    fallback: 'blocking',
     paths: beersArr.map((beer) => ({
       params: { beerId: beer._id.toString() },
     })),
