@@ -1,0 +1,54 @@
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(55, 55, 162);
+}
+
+.navigation h1 {
+    margin: 10px;
+    font-size: 3rem;
+    color: white;
+}
+
+
+.navigation h1::after {
+    content: "please";
+    display: inline ;
+    color: rgb(193, 43, 43);
+    font-style: italic;
+    font-size: 1.1rem;
+    position: absolute;
+    top: 40px;
+    left: 12rem;
+    transform: rotate(-20deg);
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    font-size: 1.4rem;
+    margin-right: 25px;
+}
+
+.navigation a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width: 500px) {
+
+    .navigation a {
+        margin: 4px;
+        margin-right: 5px;
+        font-size: 1rrem;
+    }
+
+}
+

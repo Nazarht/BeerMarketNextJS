@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+font-size: 15px;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main .main-text {
+  background-image: url("https://thumbs.dreamstime.com/b/light-beer-background-25171405.jpg");
+  background-clip: text;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  color: transparent;
+  font-size: 5rem;
+  margin: 10px;
+}
+
+main form {
+  margin: 40px;
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 12px;
+  }
+
+  main .main-text {
+    font-size: 3rem;
+  }
+}

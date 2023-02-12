@@ -1,0 +1,63 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form button {
+    padding: 5px 15px;
+    margin: 15px;
+    font-size: 1.5rem;
+}
+
+.control {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.holder {
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.holder input,
+.holder textarea {
+    width: min(30vmax, 80vw);
+    font-size: 1.5rem;
+    margin: 5px;
+    resize: none;
+}
+
+.holder label {
+    font-size: 1.5rem;
+}
+
+
+
+
+.error {
+    color: red;
+    visibility: hidden;
+    text-align: center;
+}
+
+.active {
+    visibility: visible;
+    animation: appear 1s ease-in-out;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}

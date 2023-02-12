@@ -1,0 +1,52 @@
+.beer-item {
+    margin: 20px;
+  display: flex;
+  flex-direction: column;
+  width: min(90vw, 60vmax);
+  padding: 10px;
+  background-color: rgb(55, 55, 162);
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.beer-item img {
+  width: 95%;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.beer-item h2 {
+  margin: 10px 20px;
+  font-size: 2.2rem;
+}
+
+.beer-item div {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.beer-item p {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.beer-item span {
+    font-size: 2.5rem;
+    font-weight: 800;
+  /* background-image: url("https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+  background-clip: text;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  color: transparent; */
+}
+
+.beer-item {
+    text-decoration: none;
+}
